@@ -27,7 +27,7 @@ app.use('/auth', authRoutes);
 
 // Rota para a documentação HTML
 app.get('/documentation', (req, res) => {
-  res.sendFile(__dirname + '/documentation.html');
+  res.sendFile(__dirname + '/docs.html');
 });
 
 app.listen(port, () => {
