@@ -1,43 +1,43 @@
 # Barber Shop API
 
-## Descrição
+## Description
 
-A Barber Shop API é uma aplicação back-end desenvolvida para uma barbearia. Esta API oferece recursos para gerenciar cortes de cabelo, barbeiros, assinaturas de newsletter, formulários de contato e autenticação para gerentes do site.
+The Barber Shop API is a back-end application developed for a barbershop. This API offers features to manage haircuts, barbers, newsletter subscriptions, contact forms, and authentication for website managers.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - Node.js
 - Express.js
-- MongoDB (Mongoose para integração)
-- JSON Web Token (JWT) para autenticação
-- Bcrypt para criptografia de senhas
+- MongoDB (Mongoose for integration)
+- JSON Web Token (JWT) for authentication
+- Bcrypt for password encryption
 
-## Funcionalidades
+## Functionalities
 
-1. **Cortes de Cabelo:**
-   - Cadastrar, visualizar, atualizar e excluir cortes de cabelo.
+1. **Haircuts:**
+    - Register, view, update and delete haircuts.
    
-2. **Barbeiros:**
-   - Cadastrar, visualizar, atualizar e excluir informações sobre barbeiros.
+2. **Barbers:**
+    - Register, view, update and delete information about barbers.
 
 3. **Newsletter:**
-   - Assinar a newsletter fornecendo um endereço de e-mail.
-   - Visualizar todos os e-mails inscritos.
-   - Visualizar um e-mail específico.
+    - Subscribe to the newsletter by providing an email address.
+    - View all subscribed emails.
+    - View a specific email.
 
-4. **Formulário de Contato:**
-   - Enviar formulário de contato com nome, e-mail, assunto e mensagem.
-   - Visualizar todos os formulários de contato.
-   - Visualizar um formulário de contato específico.
-   - Atualizar um formulário de contato.
-   - Excluir um formulário de contato.
+4. **Contact Form:**
+    - Send contact form with name, email, subject and message.
+    - View all contact forms.
+    - View a specific contact form.
+    - Update a contact form.
+    - Delete a contact form.
 
-5. **Autenticação do Gerente:**
-   - Registrar um novo gerente.
-   - Fazer login como gerente.
+5. **Manager Authentication:**
+    - Register a new manager.
+    - Log in as a manager.
 
-## Instalação e Uso
+## Installation and Use
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/barber-shop-api.git
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/seu-usuario/barber-shop-api.git
