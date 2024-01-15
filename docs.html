@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Shop API Documentation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    :root {
+      --primary-100: #26A69A;
+      --primary-200: #408d86;
+      --primary-300: #cdfaf6;
+      --accent-100: #80CBC4;
+      --accent-200: #43A49B;
+      --text-100: #263339;
+      --text-200: #728f9e;
+      --bg-100: #E0F2F1;
+      --bg-200: #D0EBEA;
+      --bg-300: #FFFFFF;
+    }
+
+    body {
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--bg-100);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--primary-100);
+    }
+
+    pre {
+      background-color: var(--bg-100);
+      border: 1px solid var(--bg-200);
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    code {
+      color: var(--accent-200);
+    }
+
+    .container {
+      background-color: var(--bg-300);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .mt-5 {
+      margin-top: 3rem !important;
+    }
+
+    .mt-4 {
+      margin-top: 2rem !important;
+    }
+
+    .mt-3 {
+      margin-top: 1rem !important;
+    }
+
+    .mt-5 {
+      margin-top: 3rem !important;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="mt-5">Barber Shop API Documentation</h1>
+
+    <h2 class="mt-4">Haircuts</h2>
+    <p>Endpoint: <code>/api/haircuts</code></p>
+
+    <h3 class="mt-3">GET All Haircuts</h3>
+    <pre><code>GET /api/haircuts</code></pre>
+
+    <h3 class="mt-3">GET Specific Haircut</h3>
+    <pre><code>GET /api/haircuts/:id</code></pre>
+
+    <h3 class="mt-3">POST New Haircut</h3>
+    <pre><code>POST /api/haircuts</code></pre>
+
+    <h3 class="mt-3">PUT Update Haircut</h3>
+    <pre><code>PUT /api/haircuts/:id</code></pre>
+
+    <h3 class="mt-3">DELETE Haircut</h3>
+    <pre><code>DELETE /api/haircuts/:id</code></pre>
+
+    <h2 class="mt-5">Barbers</h2>
+    <p>Endpoint: <code>/api/barbers</code></p>
+
+    <h3 class="mt-3">GET All Barbers</h3>
+    <pre><code>GET /api/barbers</code></pre>
+
+    <h3 class="mt-3">GET Specific Barber</h3>
+    <pre><code>GET /api/barbers/:id</code></pre>
+
+    <h3 class="mt-3">POST New Barber</h3>
+    <pre><code>POST /api/barbers</code></pre>
+
+    <h3 class="mt-3">PUT Update Barber</h3>
+    <pre><code>PUT /api/barbers/:id</code></pre>
+
+    <h3 class="mt-3">DELETE Barber</h3>
+    <pre><code>DELETE /api/barbers/:id</code></pre>
+
+    <h2 class="mt-5">Newsletter Emails</h2>
+    <p>Endpoint: <code>/api/newsletter</code></p>
+
+    <h3 class="mt-3">POST Subscribe to Newsletter</h3>
+    <pre><code>POST /api/newsletter</code></pre>
+
+    <h3 class="mt-3">GET All Newsletter Emails</h3>
+    <pre><code>GET /api/newsletter</code></pre>
+
+    <h3 class="mt-3">GET Specific Newsletter Email</h3>
+    <pre><code>GET /api/newsletter/:email</code></pre>
+
+    <h2 class="mt-5">Contact Form</h2>
+    <p>Endpoint: <code>/api/contact</code></p>
+
+    <h3 class="mt-3">POST Submit Contact Form</h3>
+    <pre><code>POST /api/contact</code></pre>
+
+    <h3 class="mt-3">GET All Contact Forms</h3>
+    <pre><code>GET /api/contact</code></pre>
+
+    <h3 class="mt-3">GET Specific Contact Form</h3>
+    <pre><code>GET /api/contact/:id</code></pre>
+
+    <h3 class="mt-3">PUT Update Contact Form</h3>
+    <pre><code>PUT /api/contact/:id</code></pre>
+
+    <h3 class="mt-3">DELETE Contact Form</h3>
+    <pre><code>DELETE /api/contact/:id</code></pre>
+    <h2 class="mt-5">Authentication</h2>
+    <p>Endpoint: <code>/auth</code></p>
+
+    <h3 class="mt-3">POST Register Manager</h3>
+    <pre><code>POST /auth/register</code></pre>
+
+    <h3 class="mt-3">POST Login Manager</h3>
+    <pre><code>POST /auth/login</code></pre>
+  </div>
+
+</body>
+
+</html>

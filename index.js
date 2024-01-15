@@ -3,6 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const haircutRoutes = require('./routes/haircutRoutes');
 const barberRoutes = require('./routes/barberRoutes');
+const newsletterEmailRoutes = require('./routes/newsletterEmailRoutes');
+const contactFormRoutes = require('./routes/contactFormRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -10,14 +13,23 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost/barberShopDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://Bfrp:Q82L06zVEhOZ1Tgs@cluster0.3vllkah.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Erro de conexão com o MongoDB:'));
 db.once('open', () => console.log('Conectado ao MongoDB'));
 
 app.use('/api', haircutRoutes);
 app.use('/api', barberRoutes);
+app.use('/api', newsletterEmailRoutes);
+app.use('/api', contactFormRoutes);
+app.use('/auth', authRoutes);
+
+// Rota para a documentação HTML
+app.get('/documentation', (req, res) => {
+  res.sendFile(__dirname + '/documentation.html');
+});
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Documentação disponível em http://localhost:${port}/documentation`);
 });
