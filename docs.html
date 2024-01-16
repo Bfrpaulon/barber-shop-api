@@ -92,15 +92,63 @@
 
     <h3 class="mt-3">GET All Haircuts</h3>
     <pre><code>GET /api/haircuts</code></pre>
+    <pre>
+      <code>
+        [
+          {
+            "_id": "1",
+            "name": "Classic Cut",
+            "price": 25.0,
+            "description": "Timeless and stylish haircut",
+            "photos": ["url1", "url2"]
+          },
+          {
+            "_id": "2",
+            "name": "Fade Cut",
+            "price": 30.0,
+            "description": "Tapered sides with a clean fade",
+            "photos": ["url3", "url4"]
+          }
+        ]
+      </code>
+    </pre>
 
     <h3 class="mt-3">GET Specific Haircut</h3>
     <pre><code>GET /api/haircuts/:id</code></pre>
+    <pre>
+      <code>
+        {
+          "_id": "1",
+          "name": "Classic Cut",
+          "price": 25.0,
+          "description": "Timeless and stylish haircut",
+          "photos": ["url1", "url2"]
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">POST New Haircut</h3>
     <pre><code>POST /api/haircuts</code></pre>
+    <pre>
+      <code>
+        {
+          "name": "Modern Pompadour",
+          "price": 35.0,
+          "description": "Contemporary take on a classic style",
+          "photos": ["url5", "url6"]
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">PUT Update Haircut</h3>
     <pre><code>PUT /api/haircuts/:id</code></pre>
+    <pre>
+      <code>
+        {
+          "price": 40.0
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">DELETE Haircut</h3>
     <pre><code>DELETE /api/haircuts/:id</code></pre>
@@ -110,15 +158,59 @@
 
     <h3 class="mt-3">GET All Barbers</h3>
     <pre><code>GET /api/barbers</code></pre>
+    <pre>
+      <code>
+        [
+          {
+            "_id": "1",
+            "name": "John Doe",
+            "specialty": "Classic Cuts",
+            "photo": "barber1.jpg"
+          },
+          {
+            "_id": "2",
+            "name": "Jane Smith",
+            "specialty": "Fade Styles",
+            "photo": "barber2.jpg"
+          }
+        ]
+      </code>
+    </pre>
 
     <h3 class="mt-3">GET Specific Barber</h3>
     <pre><code>GET /api/barbers/:id</code></pre>
+    <pre>
+      <code>
+        {
+          "_id": "1",
+          "name": "John Doe",
+          "specialty": "Classic Cuts",
+          "photo": "barber1.jpg"
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">POST New Barber</h3>
     <pre><code>POST /api/barbers</code></pre>
+    <pre>
+      <code>
+        {
+          "name": "Alice Johnson",
+          "specialty": "Modern Styles",
+          "photo": "barber3.jpg"
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">PUT Update Barber</h3>
     <pre><code>PUT /api/barbers/:id</code></pre>
+    <pre>
+      <code>
+        {
+          "specialty": "Creative Designs"
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">DELETE Barber</h3>
     <pre><code>DELETE /api/barbers/:id</code></pre>
@@ -128,38 +220,132 @@
 
     <h3 class="mt-3">POST Subscribe to Newsletter</h3>
     <pre><code>POST /api/newsletter</code></pre>
+    <pre>
+      <code>
+        {
+          "email": "john@example.com"
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">GET All Newsletter Emails</h3>
     <pre><code>GET /api/newsletter</code></pre>
+    <pre>
+      <code>
+        [
+          {
+            "_id": "1",
+            "email": "john@example.com"
+          },
+          {
+            "_id": "2",
+            "email": "jane@example.com"
+          }
+        ]
+      </code>
+    </pre>
 
     <h3 class="mt-3">GET Specific Newsletter Email</h3>
     <pre><code>GET /api/newsletter/:email</code></pre>
+    <pre>
+      <code>
+        {
+          "_id": "1",
+          "email": "john@example.com"
+        }
+      </code>
+    </pre>
 
     <h2 class="mt-5">Contact Form</h2>
     <p>Endpoint: <code>/api/contact</code></p>
 
     <h3 class="mt-3">POST Submit Contact Form</h3>
     <pre><code>POST /api/contact</code></pre>
+    <pre>
+      <code>
+        {
+          "name": "John Doe",
+          "email": "john@example.com",
+          "subject": "Inquiry",
+          "message": "Hello, I have a question."
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">GET All Contact Forms</h3>
     <pre><code>GET /api/contact</code></pre>
+    <pre>
+      <code>
+        [
+          {
+            "_id": "1",
+            "name": "John Doe",
+            "email": "john@example.com",
+            "subject": "Inquiry",
+            "message": "Hello, I have a question."
+          },
+          {
+            "_id": "2",
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "subject": "Feedback",
+            "message": "Great service!"
+          }
+        ]
+      </code>
+    </pre>
 
     <h3 class="mt-3">GET Specific Contact Form</h3>
     <pre><code>GET /api/contact/:id</code></pre>
+    <pre>
+      <code>
+        {
+          "_id": "1",
+          "name": "John Doe",
+          "email": "john@example.com",
+          "subject": "Inquiry",
+          "message": "Hello, I have a question."
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">PUT Update Contact Form</h3>
     <pre><code>PUT /api/contact/:id</code></pre>
+    <pre>
+      <code>
+        {
+          "subject": "New Inquiry"
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">DELETE Contact Form</h3>
     <pre><code>DELETE /api/contact/:id</code></pre>
+
     <h2 class="mt-5">Authentication</h2>
     <p>Endpoint: <code>/auth</code></p>
 
     <h3 class="mt-3">POST Register Manager</h3>
     <pre><code>POST /auth/register</code></pre>
+    <pre>
+      <code>
+        {
+          "username": "manager",
+          "password": "password123"
+        }
+      </code>
+    </pre>
 
     <h3 class="mt-3">POST Login Manager</h3>
     <pre><code>POST /auth/login</code></pre>
+    <pre>
+      <code>
+        {
+          "username": "manager",
+          "password": "password123"
+        }
+      </code>
+    </pre>
   </div>
 
 </body>
