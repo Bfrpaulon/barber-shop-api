@@ -346,6 +346,72 @@
         }
       </code>
     </pre>
+    <h2 class="mt-5">Categories</h2>
+<p>Endpoint: <code>/api/categories</code></p>
+
+<h3 class="mt-3">GET All Categories</h3>
+<pre><code>GET /api/categories</code></pre>
+<pre>
+  <code>
+    [
+      {
+        "_id": "1",
+        "title": "Cuts",
+        "description": "Various haircut services",
+        "price": 25.0,
+        "icon": "cut-icon.png"
+      },
+      {
+        "_id": "2",
+        "title": "Beards",
+        "description": "Professional beard grooming",
+        "price": 20.0,
+        "icon": "beard-icon.png"
+      }
+    ]
+  </code>
+</pre>
+
+<h3 class="mt-3">GET Specific Category</h3>
+<pre><code>GET /api/categories/:id</code></pre>
+<pre>
+  <code>
+    {
+      "_id": "1",
+      "title": "Cuts",
+      "description": "Various haircut services",
+      "price": 25.0,
+      "icon": "cut-icon.png"
+    }
+  </code>
+</pre>
+
+<h3 class="mt-3">POST New Category</h3>
+<pre><code>POST /api/categories</code></pre>
+<pre>
+  <code>
+    {
+      "title": "Coloring",
+      "description": "Professional hair coloring",
+      "price": 35.0,
+      "icon": "coloring-icon.png"
+    }
+  </code>
+</pre>
+
+<h3 class="mt-3">PUT Update Category</h3>
+<pre><code>PUT /api/categories/:id</code></pre>
+<pre>
+  <code>
+    {
+      "price": 40.0
+    }
+  </code>
+</pre>
+
+<h3 class="mt-3">DELETE Category</h3>
+<pre><code>DELETE /api/categories/:id</code></pre>
+
   </div>
 
 </body>

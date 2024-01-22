@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -7,6 +8,8 @@ const barberRoutes = require('./routes/barberRoutes');
 const newsletterEmailRoutes = require('./routes/newsletterEmailRoutes');
 const contactFormRoutes = require('./routes/contactFormRoutes');
 const authRoutes = require('./routes/authRoutes');
+const categoryRoutes = require('./routes/categoryRoutes'); 
+
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -24,8 +27,8 @@ app.use('/api', barberRoutes);
 app.use('/api', newsletterEmailRoutes);
 app.use('/api', contactFormRoutes);
 app.use('/auth', authRoutes);
+app.use('/api', categoryRoutes); 
 
-// Rota para a documentação HTML
 app.get('/documentation', (req, res) => {
   res.sendFile(__dirname + '/docs.html');
 });
